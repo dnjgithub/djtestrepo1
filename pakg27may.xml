@@ -1,0 +1,548 @@
+<NSDeploymentPackage rcVersion="13.2.1.0001.052421">
+  <Name catalogVersion="" vendorName="">pakg27may</Name>
+  <TypeID>1</TypeID>
+  <DeploymentOptions></DeploymentOptions>
+  <Guid>3355D0B1-5C8F-4377-918F-E9F223444C32</Guid>
+  <Description>pakg27may</Description>
+  <EntityXML>Entity XML</EntityXML>
+  <DeploymentXML><rex>
+  <Header requestAction="put">
+    <Params>
+      <DatasourceOverride>--LOCALDATASOURCE--</DatasourceOverride>
+      <OptionSetNameDefault>catalogDeployerDefault</OptionSetNameDefault>
+      <ServiceDefinitionPermitMissingAssociatedService>false</ServiceDefinitionPermitMissingAssociatedService>
+    </Params>
+  </Header>
+  <ServiceDefinitions>
+    <ServiceDefinition name="Activate Team Management" serviceGroupName="Deploy Tenant Management" catalogName="" type="notspecified" isActive="true" isReportable="false" isEntitlement="false" isOrderable="true" computePrice="false" authorizations="site" canStartLater="false" dateQuality="tbd" guid="7BC289D7-9212-4233-89DB-3118A9A51F44" orderingMode="1-Click" paginationViewMode="Classic View" hideInServiceCatalog="false" hideInMyOrders="false" isTemplate="false" showOrderSummary="false" maxQuantity="0" isBaseService="false" templateType="null" tenantRelevant="false">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Duration value="0.0" units="hours" isDefinedDuration="false"/>
+      <Billing rate="0.0" type="none"/>
+      <Expensing expenseCode=""/>
+      <Authorization>
+        <ServiceGroupReview>
+          <AuthRoles/>
+          <Escalations>
+            <Escalation authorizationType="SiteAdmin" after="2000.0" displayOrder="1" firstRecipient="sparre@cisco.com" firstNotification="&lt;s ID=&quot;3469&quot;/&gt;" secondRecipient="sparre@cisco.com" secondNotification="&lt;s ID=&quot;6321&quot;/&gt;" thirdRecipient="sparre@cisco.com" thirdNotification="&lt;s ID=&quot;6322&quot;/&gt;"/>
+          </Escalations>
+        </ServiceGroupReview>
+        <ServiceGroupAuthorization>
+          <AuthRoles/>
+          <Escalations>
+            <Escalation authorizationType="SiteAdmin" after="2300.0" displayOrder="1" firstRecipient="sparre@cisco.com" firstNotification="&lt;s ID=&quot;3469&quot;/&gt;" secondRecipient="sparre@cisco.com" secondNotification="&lt;s ID=&quot;6321&quot;/&gt;" thirdRecipient="sparre@cisco.com" thirdNotification="&lt;s ID=&quot;3522&quot;/&gt;"/>
+          </Escalations>
+        </ServiceGroupAuthorization>
+      </Authorization>
+      <Presentation>
+        <Description>
+          <Icon documentId="0"/>
+        </Description>
+        <SectionOne isEnabled="false"/>
+        <SectionTwo isEnabled="false"/>
+        <SectionThree isEnabled="false"/>
+      </Presentation>
+      <PositionNames>
+        <PositionName name="Author" type="Service" serviceDefinitionName="Activate Team Management" serviceDefinitionGuid="7BC289D7-9212-4233-89DB-3118A9A51F44" objectType="Person" instanceName="admin"/>
+      </PositionNames>
+      <Categories>
+        <ConsumerServicesCategories/>
+        <ServicePortfoliosCategories/>
+      </Categories>
+      <AssociatedKeywords/>
+      <AssociatedObjectives/>
+      <Pricing price="0.0" pricingSchema="fixedprice" pricingSchemaString="Fixed Price" priceDisplaySchema="" priceDisplaySchemaString="">
+        <Description>
+          <Text><![CDATA[]]></Text>
+        </Description>
+      </Pricing>
+      <Costing>
+        <Costs/>
+      </Costing>
+      <ServiceLevel/>
+      <Bundling canBeBundled="true" isABundle="false">
+        <ServiceContainsServices/>
+        <ServiceIsContainedByServices/>
+      </Bundling>
+      <ServicePreRequisites/>
+      <ServiceAccessories/>
+      <Manufacturer name="" partNumber=""/>
+      <Supplier name="" type="" partNumber=""/>
+      <Plans>
+        <Plan>
+          <PlanAttributes type="delivery" name="PrimaryDeliveryPlan" subtaskFlow="sequential" maxDepth="1" hoursPerDay="8.0" isAutomaticStart="true">
+            <PlanSubject><![CDATA[<s ID="11"><p>#Name#</p></s>]]></PlanSubject>
+            <PlanMonitorTask>
+              <PlanMonitorWorkflowRoles>
+                <PlanMonitorWorkflowRole assignmentMethod="none" expression=""/>
+              </PlanMonitorWorkflowRoles>
+              <Notifications>
+                <Notification eventType="plantaskcanceled" emailTemplate=""/>
+              </Notifications>
+            </PlanMonitorTask>
+          </PlanAttributes>
+          <Tasks>
+            <DeliveryTask name="Activate TM" displayName="Activate TM" type="simpletask" duration="10.0" effort="10.0" overbookTime="true" displayEffortSubPage="true" priority="2" escalationMaximumTier="-1" hasChecklist="false" isParent="false" isFirstChild="false" isLastChild="true" recomputeExpressions="false">
+              <DeliveryWorkflowRules parentTask="" parentTaskDisplayOrder="0" subtaskFlow="sequential" displayOrder="10000" childLevel="1" allowCancellation="true">
+                <ConditionalStart isEvaluateEarly="true"/>
+                <ScheduleStart isScheduledStart="false"/>
+                <DirectoryTaskCondition/>
+                <QueueServiceRequest>
+                  <Configuration><![CDATA[]]></Configuration>
+                </QueueServiceRequest>
+              </DeliveryWorkflowRules>
+              <DeliveryWorkflowRoles>
+                <Performer processRole="" assignmentMethod="none" outsourceSupplier="" agent="-3" isAgentFulfillment="false" isOutsourceFulfillment="false"/>
+                <Owner processRole="" assignmentMethod="from a position" expression="Organizational Unit.&lt;s ID=&quot;2090&quot;/&gt;">
+                  <PositionName name="&lt;s ID=&quot;2090&quot;/&gt;" type="OrganizationalUnit"/>
+                </Owner>
+              </DeliveryWorkflowRoles>
+              <Instructions>
+                <Instruction><![CDATA[]]></Instruction>
+              </Instructions>
+              <TaskDITParameters>
+                <TaskDITParameter dictionaryName="Activate_Team_Management">
+                  <OperationParameter><![CDATA[operation]]></OperationParameter>
+                  <OperationValue><![CDATA[activateTM]]></OperationValue>
+                  <DictionaryParameter><![CDATA[dictionaryid]]></DictionaryParameter>
+                  <DictionaryValue><![CDATA[69]]></DictionaryValue>
+                  <ActionParameter><![CDATA[TakeAction]]></ActionParameter>
+                  <ActionValue><![CDATA[2]]></ActionValue>
+                </TaskDITParameter>
+              </TaskDITParameters>
+              <Notifications/>
+            </DeliveryTask>
+          </Tasks>
+          <Escalations/>
+        </Plan>
+      </Plans>
+      <DictionaryFormAccessPolicies/>
+      <ServiceForms>
+        <ServiceForm name="Tenant-Information Form" displayOrder="1" guid=""/>
+        <ServiceForm name="Activate Team Management" displayOrder="2" guid=""/>
+      </ServiceForms>
+      <RelatedEntities>
+        <Forms>
+          <Form name="Tenant-Information Form" guid=""/>
+          <Form name="Activate Team Management" guid=""/>
+        </Forms>
+        <ServiceGroups>
+          <ServiceGroupName name="Deploy Tenant Management" guid="4D554CB8-A6E3-465C-ADD0-508B86C4C185"/>
+        </ServiceGroups>
+        <Categories/>
+        <EmailTemplates>
+          <EmailTemplate name="&lt;s ID=&quot;3469&quot;/&gt;" guid=""/>
+          <EmailTemplate name="&lt;s ID=&quot;6321&quot;/&gt;" guid=""/>
+          <EmailTemplate name="&lt;s ID=&quot;6322&quot;/&gt;" guid=""/>
+          <EmailTemplate name="&lt;s ID=&quot;3522&quot;/&gt;" guid=""/>
+        </EmailTemplates>
+        <Objectives/>
+        <ServiceDefinitions/>
+        <Keywords/>
+        <Persons/>
+        <OrganizationalUnits/>
+        <Queues/>
+        <Agents/>
+      </RelatedEntities>
+      <PermissionsAssignment>
+        <OperationsWeArePermitted/>
+        <OperationsTheyArePermitted>
+          <Operation name="service_change_rights" displayName="service_change_rights">
+            <Objects/>
+          </Operation>
+          <Operation name="service_change_delivery" displayName="service_change_delivery">
+            <Objects/>
+          </Operation>
+          <Operation name="service_change_forms" displayName="service_change_forms">
+            <Objects/>
+          </Operation>
+          <Operation name="service_change_presentation" displayName="service_change_presentation">
+            <Objects/>
+          </Operation>
+          <Operation name="service_order_service" displayName="service_order_service">
+            <Objects/>
+          </Operation>
+          <Operation name="service_read_service" displayName="service_read_service">
+            <Objects/>
+          </Operation>
+          <Operation name="service_write_service" displayName="service_write_service">
+            <Objects/>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+      <Images/>
+      <ImageURL><![CDATA[]]></ImageURL>
+      <BaseTemplateID><![CDATA[0]]></BaseTemplateID>
+      <OverwriteDefinition><![CDATA[0]]></OverwriteDefinition>
+    </ServiceDefinition>
+  </ServiceDefinitions>
+  <Forms>
+    <Form formGroupName="Deploy Tenant Management" name="Activate Team Management">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <FormDictionaries>
+        <FormDictionary caption="" defaultCaption="" dictionaryName="Activate_Team_Management" displayOrder="1" oneInstance="false" showOptions="3" useDefaultCaption="false" autoDataRetrieval="false" displayAsGrid="false" gridEditable="false" maxRows="0" displayRows="0" overrideDictionaryKeyValues="false">
+          <FormDictionaryAccessPolicies>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ordering" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="rw" resourceMoment="ordering" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ouauthorizations" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ouauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="oureviews" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="oureviews" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="stauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="stauthorizations" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="streviews" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="streviews" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="financialauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="financialauthorizations" subjectRoleName="&lt;s ID=&quot;9984&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="pricing" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="pricing" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+          </FormDictionaryAccessPolicies>
+          <ServiceDictionaryAccessPolicies/>
+          <FormElements>
+            <FormElement columns="0" dataElementName="IsActivated" displayOrder="1" distribution="horizontal" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="50" revisionNumber="1" rows="0" sendData="false" generateUnique="false" isServerEditableOnly="true" showInGrid="false">
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[Activate / De-activate Team Management]]></FormElementPromptName>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+          </FormElements>
+        </FormDictionary>
+      </FormDictionaries>
+      <Rules/>
+      <FormScriptFunctionBindings/>
+      <RelatedEntities/>
+    </Form>
+    <Form formGroupName="Reserved" name="Tenant-Information Form" logicName="tenant-information-form">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description><![CDATA[Tenant Information Form for when Tenant Management is enabled]]></Description>
+      <FormDictionaries>
+        <FormDictionary defaultCaption="Select team" dictionaryName="XX_Tenant_Information_XX" displayOrder="1" oneInstance="false" showOptions="3" useDefaultCaption="true" autoDataRetrieval="false" displayAsGrid="false" gridEditable="false" maxRows="0" displayRows="0" overrideDictionaryKeyValues="false">
+          <FormDictionaryAccessPolicies>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ordering" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="rw" resourceMoment="ordering" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ouauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ouauthorizations" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="oureviews" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="oureviews" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="stauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="stauthorizations" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="streviews" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="streviews" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="financialauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="financialauthorizations" subjectRoleName="&lt;s ID=&quot;9984&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="pricing" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="pricing" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+          </FormDictionaryAccessPolicies>
+          <ServiceDictionaryAccessPolicies/>
+          <FormElements>
+            <FormElement columns="80" dataElementName="XX_XX_TMEnabled_XX_XX" displayOrder="2" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="512" revisionNumber="21" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[XX_XX_TMEnabled_XX_XX]]></FormElementPromptName>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="80" controlCaption="" dataElementName="XX_XX_TeamName_XX_XX" displayOrder="5" distribution="vertical" enableControl="false" inputType="text" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="100" revisionNumber="21" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[TeamName]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementInstructionalText><![CDATA[Please select the tenant to which you want to order this service for.]]></FormElementInstructionalText>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+          </FormElements>
+        </FormDictionary>
+      </FormDictionaries>
+      <Rules>
+        <Rule displayOrder="0" name="PopulateTMEnabled" type="ddr" isValidating="false" isImplicit="false" isEnforceSubscriptions="true">
+          <Description><![CDATA[Populate TMEnabled]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="preload" inputType="url" listOrder="0" triggerRank="1"/>
+          </TriggerEvents>
+          <Retrieval datasource="REQUESTCENTERDS" decryptSecuredValues="0" payload="" ddrDelay="0" enableBasicAuth="0">
+            <SQLQuery><![CDATA[Select Min(TMEnabled) as TMEnabled from ((Select ActivateTM as TMEnabled from AcAccountConfiguration Where PrimaryID = 
+(Select AccountConfigurationID From AcTenant where TenantID = 'ProviderBusinessTenant'))
+ UNION (Select TenantRelevant as TMEnabled from DefService Where ServiceID = #ServiceForm.ServiceId#)) as TempTable
+]]></SQLQuery>
+          </Retrieval>
+          <LookupConditions/>
+          <SortConditions/>
+          <ResultDistributions>
+            <ResultField dictionaryFieldName="XX_XX_TMEnabled_XX_XX" dictionaryName="XX_Tenant_Information_XX" fieldName="TMEnabled" fieldLabel="TMEnabled" fieldMap=""/>
+          </ResultDistributions>
+          <RuleConditions/>
+          <RuleActions/>
+        </Rule>
+        <Rule displayOrder="0" name="ShowNameField" type="cr">
+          <Description><![CDATA[Rule to show tenant name field and make it mandatory based on if TM is activated]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onload" inputType="url" listOrder="0" triggerRank="-1"/>
+          </TriggerEvents>
+          <RuleConditions>
+            <Condition conditionType="dictionary_field" listOrder="0" operation="equals">
+              <Left object="Data" operand="XX_Tenant_Information_XX.XX_XX_TMEnabled_XX_XX">
+                <DictionaryField name="XX_XX_TMEnabled_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Left>
+              <Right operand="1"/>
+            </Condition>
+          </RuleConditions>
+          <RuleActions>
+            <Action listOrder="0" type="show" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="XX_XX_TeamName_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="1" type="mandatory" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="XX_XX_TeamName_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+          </RuleActions>
+        </Rule>
+        <Rule displayOrder="0" name="HideNameField" type="cr">
+          <Description><![CDATA[Rule to hide tenant name field and make it optional based on if TM is not activated]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onload" inputType="url" listOrder="0" triggerRank="-1"/>
+          </TriggerEvents>
+          <RuleConditions>
+            <Condition conditionType="dictionary_field" listOrder="0" operation="equals">
+              <Left object="Data" operand="XX_Tenant_Information_XX.XX_XX_TMEnabled_XX_XX">
+                <DictionaryField name="XX_XX_TMEnabled_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Left>
+              <Right operand="0"/>
+            </Condition>
+          </RuleConditions>
+          <RuleActions>
+            <Action listOrder="1" type="optional" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="XX_XX_TeamName_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="2" type="hide" value="" valueType="0" priceAppliesTo="">
+              <Target object="Dictionary">
+                <Dictionary name="XX_Tenant_Information_XX"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+          </RuleActions>
+        </Rule>
+      </Rules>
+      <FormScriptFunctionBindings/>
+      <RelatedEntities/>
+    </Form>
+  </Forms>
+  <FormGroups>
+    <FormGroup name="Deploy Tenant Management" guid="79DB5CBC-9069-46C7-9889-69CE28D01ED7">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description/>
+      <PermissionsAssignment>
+        <OperationsWeArePermitted/>
+        <OperationsTheyArePermitted>
+          <Operation name="reusable_forms_write" displayName="reusable_forms_write">
+            <Objects/>
+          </Operation>
+          <Operation name="reusable_forms_read" displayName="reusable_forms_read">
+            <Objects/>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+    </FormGroup>
+    <FormGroup name="Reserved" guid="6CD19C0A-1FB1-4AEC-8F0F-C2CF0250DEF3">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description/>
+      <PermissionsAssignment>
+        <OperationsWeArePermitted/>
+        <OperationsTheyArePermitted>
+          <Operation name="reusable_forms_write" displayName="reusable_forms_write">
+            <Objects/>
+          </Operation>
+          <Operation name="reusable_forms_read" displayName="reusable_forms_read">
+            <Objects/>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+    </FormGroup>
+  </FormGroups>
+  <DictionaryGroups>
+    <DictionaryGroup name="&lt;s ID=&quot;10819&quot;/&gt;" guid="E15F635A-2304-45C6-952D-236A79121249">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description/>
+    </DictionaryGroup>
+    <DictionaryGroup name="Deploy Tenant Management" guid="D5F0BB7F-6501-452B-A430-96D9497BA9BA">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description/>
+    </DictionaryGroup>
+  </DictionaryGroups>
+  <ServiceGroups>
+    <ServiceGroup name="Deploy Tenant Management" serviceTeam="Site Administration" authorizations="append" guid="4D554CB8-A6E3-465C-ADD0-508B86C4C185">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description/>
+      <Authorization>
+        <ServiceGroupReview>
+          <AuthRoles/>
+          <Escalations>
+            <Escalation authorizationType="SiteAdmin" after="2000.0" displayOrder="1" firstRecipient="sparre@cisco.com" firstNotification="&lt;s ID=&quot;3469&quot;/&gt;" secondRecipient="sparre@cisco.com" secondNotification="&lt;s ID=&quot;6321&quot;/&gt;" thirdRecipient="sparre@cisco.com" thirdNotification="&lt;s ID=&quot;6322&quot;/&gt;"/>
+          </Escalations>
+        </ServiceGroupReview>
+        <ServiceGroupAuthorization>
+          <AuthRoles>
+            <AuthRole authorizationType="ServiceGroup" name="Create Team" subject="Create Team #Service.Data.Create_Generic_Tenant.Tenant_Name#" displayOrder="1" offsetStart="0" overbooktime="0" duration="0.0" effort="0.0" maximumTier="-1" condition="Service.Data.Create_Generic_Tenant.Approval_Req=&quot;Yes&quot;" isAutomaticActivity="false" isEvaluateEarly="true" recomputeExpressions="false" workflowType="internal">
+              <Assign method="from an expression" expression="QUEUE=#Service.Data.Create_Generic_Tenant.Parent_Tenant#_admin"/>
+              <Notifications>
+                <Notification eventType="authorizationstarted" emailTemplate="Create Team Approval Request"/>
+                <Notification eventType="authorizationapproved" emailTemplate="Create Team Accept Notification"/>
+                <Notification eventType="authorizationrejected" emailTemplate="Create Team Reject Notification"/>
+              </Notifications>
+            </AuthRole>
+            <AuthRole authorizationType="ServiceGroup" name="Join Team" subject="Authorize to join #Service.Data.Join_Tenant.Tenant_Name#" displayOrder="2" offsetStart="0" overbooktime="0" duration="0.0" effort="0.0" maximumTier="-1" condition="Service.Data.Join_Tenant.Approval_Req=&quot;Yes&quot;" isAutomaticActivity="false" isEvaluateEarly="true" recomputeExpressions="false" workflowType="internal">
+              <Assign method="from an expression" expression="QUEUE=#Service.Data.Join_Tenant.Tenant_Name#_admin"/>
+              <Notifications>
+                <Notification eventType="authorizationstarted" emailTemplate="Join Team Approval Request"/>
+                <Notification eventType="authorizationapproved" emailTemplate="Join Team Accept Notification"/>
+                <Notification eventType="authorizationrejected" emailTemplate="Join Team Reject Notification"/>
+              </Notifications>
+            </AuthRole>
+            <AuthRole authorizationType="ServiceGroup" name="Leave Team" subject="Authorize to Leave #Service.Data.Leave_Team.Tenant_Name#" displayOrder="3" offsetStart="0" overbooktime="0" duration="0.0" effort="0.0" maximumTier="-1" condition="Service.Data.Leave_Team.Approval_Req=&quot;Yes&quot;" isAutomaticActivity="false" isEvaluateEarly="true" recomputeExpressions="false" workflowType="internal">
+              <Assign method="from an expression" expression="QUEUE=#Service.Data.Leave_Team.Tenant_Name#_admin"/>
+              <Notifications>
+                <Notification eventType="authorizationstarted" emailTemplate="Leave Team Approval Request"/>
+                <Notification eventType="authorizationrejected" emailTemplate="Leave Team Reject Notification"/>
+              </Notifications>
+            </AuthRole>
+          </AuthRoles>
+          <Escalations>
+            <Escalation authorizationType="SiteAdmin" after="2300.0" displayOrder="1" firstRecipient="sparre@cisco.com" firstNotification="&lt;s ID=&quot;3469&quot;/&gt;" secondRecipient="sparre@cisco.com" secondNotification="&lt;s ID=&quot;6321&quot;/&gt;" thirdRecipient="sparre@cisco.com" thirdNotification="&lt;s ID=&quot;3522&quot;/&gt;"/>
+          </Escalations>
+        </ServiceGroupAuthorization>
+      </Authorization>
+      <PositionNames/>
+      <PermissionsAssignment>
+        <OperationsWeArePermitted/>
+        <OperationsTheyArePermitted>
+          <Operation name="service_group_order_services" displayName="service_group_order_services">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="Deploy Tenant Management" type="roletypeuserdefined" guid=""/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="service_group_read" displayName="service_group_read">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="Deploy Tenant Management" type="roletypeuserdefined" guid=""/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="service_group_write" displayName="service_group_write">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="Deploy Tenant Management" type="roletypeuserdefined" guid=""/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="service_group_assign_rights" displayName="service_group_assign_rights">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="Deploy Tenant Management" type="roletypeuserdefined" guid=""/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="service_group_design_services" displayName="service_group_design_services">
+            <Objects/>
+          </Operation>
+          <Operation name="service_group_create_services" displayName="service_group_create_services">
+            <Objects/>
+          </Operation>
+          <Operation name="service_group_write_services" displayName="service_group_write_services">
+            <Objects/>
+          </Operation>
+          <Operation name="service_group_access_permitted_services" displayName="service_group_access_permitted_services">
+            <Objects/>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+    </ServiceGroup>
+  </ServiceGroups>
+  <Dictionaries>
+    <Dictionary name="Activate_Team_Management" dictionaryGroupName="Deploy Tenant Management" dictionaryTemplateType="1" isActive="true" isExternal="false" isReportable="false" isServicePrivate="false" contactPerson="" status="0" guid="A7844F01-2720-49BB-B895-1C4708C04E87" logicName="Activate_Team_Management">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description/>
+      <CategoryTypeName displayName="None" name="None"/>
+      <DBANotes><![CDATA[]]></DBANotes>
+      <RevisionNotes><![CDATA[]]></RevisionNotes>
+      <ExternalDictionaryInfo isQuery="false">
+        <SQLStatement><![CDATA[]]></SQLStatement>
+      </ExternalDictionaryInfo>
+      <DataElements>
+        <DataElement name="IsActivated" displayOrder="1" maxLength="50" dataType="Boolean" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+      </DataElements>
+      <RelatedEntities/>
+    </Dictionary>
+    <Dictionary name="XX_Tenant_Information_XX" dictionaryGroupName="&lt;s ID=&quot;10819&quot;/&gt;" dictionaryTemplateType="1" isActive="true" isExternal="false" isReportable="false" isServicePrivate="false" contactPerson="" status="0" serviceItemFamily="" guid="11172587-D749-49A5-8779-F64C7C321966" logicName="tenant-information">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description>
+        <Text><![CDATA[Tenant Information Section]]></Text>
+      </Description>
+      <CategoryTypeName displayName="None" name="None"/>
+      <DBANotes><![CDATA[]]></DBANotes>
+      <DefaultCaption><![CDATA[Select team]]></DefaultCaption>
+      <RevisionNotes><![CDATA[]]></RevisionNotes>
+      <ExternalDictionaryInfo isQuery="false">
+        <SQLStatement><![CDATA[]]></SQLStatement>
+      </ExternalDictionaryInfo>
+      <DataElements>
+        <DataElement name="XX_XX_TMEnabled_XX_XX" displayOrder="1" maxLength="512" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="XX_XX_TeamName_XX_XX" displayOrder="2" maxLength="100" dataType="Tenant" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+      </DataElements>
+      <RelatedEntities/>
+    </Dictionary>
+  </Dictionaries>
+  <ScriptLibraries/>
+  <ScriptFunctions/>
+</rex></DeploymentXML>
+  <HasImage>false</HasImage>
+  <CreatorObjectId>0</CreatorObjectId>
+  <CreatorObjectInstanceId>0</CreatorObjectInstanceId>
+  <DocSize>0</DocSize>
+  <TenantId>0</TenantId>
+  <UploadedBy>0</UploadedBy>
+</NSDeploymentPackage>
